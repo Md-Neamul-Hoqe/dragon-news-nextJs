@@ -13,9 +13,6 @@ import { IconButton, Stack } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Link from 'next/link';
 
-
-const pages = [ 'Products', 'Pricing', 'Blog' ];
-
 const navItems = [
     {
         route: 'Home',
