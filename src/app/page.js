@@ -1,10 +1,19 @@
-import React from 'react';
+import LatestNews from '@/components/ui/LatestNews/LatestNews';
+import SideBar from '@/components/ui/SideBar/SideBar';
+import { Box, Grid } from '@mui/material';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>National News</h1>
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={8}>
+          <LatestNews />
+        </Grid>
+        <Grid item xs={4}>
+          <SideBar />
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 
